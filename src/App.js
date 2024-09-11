@@ -1,21 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* Main title */}
+        <h1 className="App-title">MusCo Full-Stack MERN Developer</h1>
+
+        {/* Subtitle for the article */}
+        <p className="App-subtitle">
+          Fixing "This Page Failed to Load a Stylesheet from a URL" in React
+        </p>
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+
+        {/* Call to action */}
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/your-github-username/styles-loading-issue-demo"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          View the Full Example on GitHub
         </a>
       </header>
     </div>
