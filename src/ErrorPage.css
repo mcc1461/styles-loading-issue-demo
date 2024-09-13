@@ -1,7 +1,0 @@
-/* Incorrect @import, causing the error */
-/* @import url("https://invalid-url.com/fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"); */
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #ff6666;
-}

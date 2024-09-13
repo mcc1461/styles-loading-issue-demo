@@ -1,6 +1,6 @@
 {
   "name": "styles-loading-issue-demo",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -27,7 +27,7 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.45",
     "tailwindcss": "^3.4.11",
-    "vite": "^5.4.4",
+    "vite": "^5.4.1",
     "vite-plugin-windicss": "^1.9.3"
   }
 }

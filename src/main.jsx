@@ -1,26 +1,13 @@
-import "./index.css"; // Tailwind CSS
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import App from "./App";
-import ErrorPage from "./ErrorPage";
-import FixedPage from "./FixedPage";
+import "./index.css";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/error" element={<ErrorPage />} />
-        <Route path="/fixed" element={<FixedPage />} />
-        <Route
-          path="*"
-          element={
-            <h1 className="text-center text-white">404: Page Not Found</h1>
-          }
-        />
-      </Routes>
-    </Router>
-  </React.StrictMode>
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
 );

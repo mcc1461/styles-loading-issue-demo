@@ -2,7 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-class {
-  --custom-property: red;
-  color: var(--custom-property);
+@keyframes dynamicBounceAndRotate {
+  0%,
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-30px) scale(1.1) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(0) scale(1.2) rotate(5deg);
+  }
+  75% {
+    transform: translateY(20px) scale(1.1) rotate(0deg);
+  }
+}
+
+@keyframes colorChangeAndScale {
+  0% {
+    color: #ff0000;
+    transform: scale(1);
+  }
+  25% {
+    color: #0000ff;
+    transform: scale(1.1);
+  }
+  50% {
+    color: #00ff00;
+    transform: scale(1.2);
+  }
+  75% {
+    color: #ff00ff;
+    transform: scale(1.1);
+  }
+  100% {
+    color: #ff0000;
+    transform: scale(1);
+  }
 }
