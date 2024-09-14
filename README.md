@@ -47,7 +47,7 @@ For more information, refer to my detailed articles on tackling stylesheet loadi
 
 [Read on Hashnode](https://musco.hashnode.dev/solving-stylesheet-loading-problems-in-react-projects)
 
-[Read on Medium] (<https://musco.hashnode.dev/solving-stylesheet-loading-problems-in-react-projects>)
+[Read on Medium](https://musco.hashnode.dev/solving-stylesheet-loading-problems-in-react-projects)
 
 ### Contributing
 
