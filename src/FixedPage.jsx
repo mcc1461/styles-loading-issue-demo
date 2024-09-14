@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import FixedGif from "./assets/withFixed.gif"; // Import your GIF file
 
 const FixedPage = () => {
   return (
@@ -27,7 +28,12 @@ const FixedPage = () => {
       </h2>
 
       <pre className="p-6 mx-8 overflow-x-auto text-lg text-green-200 whitespace-pre-wrap bg-gray-900 border-4 border-green-700 rounded-lg shadow-lg">
-        {`<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" />`}
+        {`
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" 
+        rel="stylesheet">
+        `}
       </pre>
 
       <h2 className="mt-10 mb-6 text-3xl font-semibold text-center text-gray-200">
@@ -35,18 +41,17 @@ const FixedPage = () => {
       </h2>
 
       <p className="mx-8 mb-6 text-xl leading-relaxed text-center text-gray-300">
-        Below is a demonstration video showing how to fix the stylesheet loading
+        Below is a demonstration GIF showing how to fix the stylesheet loading
         error:
       </p>
 
-      <video
-        className="w-full max-w-2xl mx-8 mt-4 rounded-lg shadow-lg"
-        controls
-        src="/path/to/solution-video.mp4" // Replace with the path to your solution video
-        alt="Demonstration of the solution"
-      >
-        Your browser does not support the video tag.
-      </video>
+      <div className="p-4 mx-8 mt-4 bg-gray-800 border-8 border-blue-500 rounded-lg shadow-2xl">
+        <img
+          src={FixedGif}
+          alt="Demonstration of the solution"
+          className="w-full max-w-3xl rounded-md"
+        />
+      </div>
 
       <Link
         to="/"

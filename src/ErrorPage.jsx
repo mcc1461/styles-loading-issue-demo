@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ErrorGif from "./assets/withError.gif"; // Import your GIF file
 
 const ErrorPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4 text-white bg-gray-900">
+    <div className="flex flex-col items-center justify-center min-h-screen p-6 text-white bg-gray-900">
       <h1 className="mx-8 mb-6 text-5xl font-bold text-center text-red-500">
         Stylesheet Load Error in React
       </h1>
@@ -17,7 +18,7 @@ const ErrorPage = () => {
         </p>
       </blockquote>
 
-      <h2 className="mx-8 mt-10 mb-6 text-3xl font-semibold text-center text-gray-200">
+      <h2 className="mx-8 mt-12 mb-6 text-3xl font-semibold text-center text-gray-200">
         Why It Happens
       </h2>
       <blockquote className="p-4 mx-8 mb-6 bg-gray-800 border-l-8 border-yellow-500 rounded-lg">
@@ -32,24 +33,22 @@ const ErrorPage = () => {
         <code>index.css</code> that can lead to such errors:
       </p>
       <pre className="p-6 mx-8 overflow-x-auto text-lg text-yellow-200 whitespace-pre-wrap bg-gray-900 border-4 border-yellow-500 rounded-lg shadow-lg">
-        {`@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");`}
+        {`@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');`}
       </pre>
 
-      <h2 className="mx-8 mt-10 mb-6 text-3xl font-semibold text-center text-gray-200">
-        Demonstration Video
+      <h2 className="mx-8 mt-12 mb-6 text-3xl font-semibold text-center text-gray-200">
+        Demonstration
       </h2>
       <p className="mx-8 mb-6 text-xl leading-relaxed text-center text-gray-300">
-        Watch this video to see the error in action and understand why it
-        occurs:
+        View this GIF to see the error in action and understand why it occurs:
       </p>
-      <video
-        className="w-full max-w-2xl mx-8 mt-4 rounded-lg shadow-lg"
-        controls
-        src="/path/to/sample-video.mp4" // Replace with your video path
-        alt="Demonstration of the error"
-      >
-        Your browser does not support the video tag.
-      </video>
+      <div className="p-4 mx-8 mt-4 bg-gray-800 border-8 border-yellow-500 rounded-lg shadow-2xl">
+        <img
+          src={ErrorGif}
+          alt="Demonstration of the error"
+          className="w-full max-w-3xl rounded-md"
+        />
+      </div>
 
       <Link
         to="/"
