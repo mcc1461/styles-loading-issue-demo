@@ -5,9 +5,9 @@ import Logo from "./assets/MusCo_Logo3.png";
 const HomePage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 text-white bg-gray-900 lg:px-24">
-      {/* Header Section with logo and text */}
+      {/* Logo with increased bottom margin */}
       <img
-        className="w-2/3 mb-16 transition-transform duration-500 transform rounded-2xl sm:w-1/2 md:w-1/3 lg:w-1/4"
+        className="w-2/3 mb-20 transition-transform duration-500 transform rounded-2xl sm:w-1/2 md:w-1/3 lg:w-1/4 lg:mb-24"
         src={Logo}
         alt="Logo MusCo Full-Stack MERN Developer"
         style={{ animation: "dynamicBounceAndRotate 10s infinite ease-in-out" }}
@@ -28,7 +28,7 @@ const HomePage = () => {
       </header>
 
       {/* Combined Title and Buttons Section */}
-      <div className="flex flex-col items-center justify-center gap-6 mb-16 text-lg lg:flex-row lg:justify-between lg:w-3/4 md:mb-20 lg:gap-12">
+      <div className="flex flex-col items-center justify-center gap-6 mb-16 text-lg lg:flex-row lg:w-3/4 md:mb-20 lg:gap-12">
         <div className="flex flex-col items-center lg:items-start">
           <h2 className="mb-4 text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
             Discover More
